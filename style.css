@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+:root {
+    --cor-de-fundo: #F1F3C2;
+    --cor-de-fundo-menu: #A1D6B2;
+    --cor-do-link: #000000;
+
+    --fonte-titulo: "Playwrite GB S", cursive;
+    --fonte-secundaria: "Josefin Sans", sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    background-color: white;
+    font-family: var(--fonte-secundaria);
+    box-sizing: border-box;
+    line-height: 1.6;
+
+    
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--cor-do-link);
+}
+
+                                          /* CABEÇALHO */
+
+.cabecalho {
+    display: flex;
+    justify-content: flex-start;
+    background-color: var(--cor-de-fundo-menu);
+    padding: 2%;
+    font-family: var(--fonte-secundaria);
+    font-weight: 300;
+    color: white;
+    
+    
+}
+
+.cabecalho__logo {
+    max-width: 80px; /* Ajuste para telas pequenas */
+}
+
+.cabecalho__titulo {
+    font-size: 1.2rem;
+}
+
+.navegacao__lista {
+    display: none;
+    gap: 50px;
+}
+
+.navegacao__elemento a {
+    font-size: 0.9rem;
+}
+
+                                 /* APRESENTAÇÃO */
+.apresentacao{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding: 5%;
+    gap: 80px;
+}
+    
+.apresentacao__foto{
+    width: 200px;
+    border-radius: 20px;
+    border: var(--cor-de-fundo-menu) double 10px;
+    box-shadow: 0 6px 10px 0 black;
+    
+}
+.apresentacao__titulo{
+    margin-top: 15%;
+    text-align: center;
+    font-size: 40px;
+    color: #E8B86D;
+    padding: 2px;
+    font-family: var(--fonte-titulo);
+}
+.apresentacao__subtitulo{
+    font-family: var(--fonte-secundaria);
+    text-align:center;
+}
+                                               /* SOBRE MIM */
+.sobre-mim{
+    padding: 9% 15%;
+    text-align: justify;
+    flex-wrap: wrap;
+    background-color:var(--cor-de-fundo);
+    font-size: 20px;
+    font-family: var(--fonte-secundaria);
+    font-weight: 500;
+    
+}
+.redes{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+}
+                                       /* HABILIDADE E HOBBIES */
+.habilidades,
+.hobbies {
+    text-align: center; 
+    padding: 9% 25%;
+}
+
+.habilidades__titulo,
+.hobbies__titulo,
+.formacao__titulo {
+    margin-bottom: 20px;
+    font-family: var(--fonte-secundaria);
+    font-size: 2rem;
+}
+
+.habilidades__lista,
+.hobbies__lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+}
+
+.habilidades__elemento,
+.hobbies__elemento {
+    background-color: var(--cor-de-fundo-menu); 
+    border-radius: 5px; 
+    margin: 10px; 
+    padding: 20px; 
+    display: flex; 
+    align-items: center;
+    gap: 3px;
+}
+                                   /* FORMAÇÃO */
+.formacao{
+display: flex;
+padding: 5%;
+gap: 20px;
+flex-direction: column;
+font-family: var(--fonte-secundaria);
+background-color: var(--cor-de-fundo);
+align-items: center;
+
+}
+.formacao__elemento{
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(82, 78, 78, 0.877);
+    
+}
+ /*------------------------- PROJETOS ------------------------------------*/
+.projetos{
+    padding: 3% 10%;
+}
+.projetos__titulo{
+    padding: 3%;
+    text-align: center;
+    font-size: 2rem;
+}
+
+
+.projetos__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.projetos__item_portifolio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+    gap: 30px;
+    flex-direction: row-reverse;
+}
+.projetos__item_decodificador{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+    gap: 30px;
+    flex-direction: row;
+}
+.projetos_img_decodificador,
+.projetos_img_portifolio {
+    width: 50%;
+    box-shadow: 0 4px 15px 0 var(--cor-de-fundo-menu);
+}
+.projetos_repositorio_dec{
+    cursor: pointer;
+    background-color: var(--cor-de-fundo-menu);
+    padding: 3%;
+    border: var(--cor-de-fundo-menu) 30px;
+    font-family: var(--fonte-secundaria);
+    border-radius: 20px;
+}
+.projetos_repositorio_dec:hover{
+background-color: rgb(54, 190, 54);
+}
+.projetos__decodificador, .projetos__conteiner {
+    max-width: 300px; /* Largura máxima da descrição */
+}
+
+
+ /*----------------------------------------- CONTATO */
+.contato{
+    display: flex;
+    padding: 3% 20%;
+    background-color: #acff2f60;
+}                                          
+.contato__formulario {
+    text-align: center; 
+    padding: 20px;
+    font-family: var(--fonte-secundaria);
+    font-size: 1rem;
+    max-width: 500px; 
+    width: 100%;
+}
+.contato__imagem {
+    max-width: 300px; 
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(107, 98, 98, 0.904);
+}
+
+.contato__titulo {
+    font-size: 2rem;
+    margin-bottom: 20px; 
+    text-transform: uppercase; 
+    text-align: center;
+    margin-top: 20%;
+    padding:  30px;
+}
+
+.contato__formulario {
+    display: inline-block;
+    margin-top: 15%;
+  
+}
+
+.contato__campo {
+    width: 100%; 
+    padding: 10px; 
+    margin-bottom: 10px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    resize: none;
+    
+}
+
+
+.contato__botao {
+    padding: 10px 15px; 
+    background-color: var(--cor-de-fundo);
+    color: black;
+    border: none;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+
+}
+
+.contato__botao:hover {
+    background-color: #c9c750e3; 
+}
+
+@media (min-width: 768px) {
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .cabecalho__logo {
+        max-width: 100px;
+    }
+
+    .cabecalho__titulo {
+        font-size: 1.5rem;
+    }
+
+    .navegacao__lista {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        margin-top: 0;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1rem;
+    }
+}
+
+
+@media (min-width: 1024px) {
+ 
+    .cabecalho__titulo {
+        font-size: 1.8rem;
+    }
+
+    .navegacao__elemento a {
+        font-size: 1.1rem;
+    }
+}
+                                                    /* RODAPÉ */
+.rodape{
+    color: black;
+    background-color: var(--cor-de-fundo-menu);
+    padding: 24px;
+    text-align: center;
+    font-family:"Montserrat", sans-serif;
+    font-size: 1.5rem; 
+    font-weight: 400;
+}
