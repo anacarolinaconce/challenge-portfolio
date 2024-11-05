@@ -73,11 +73,13 @@ a {
     
 .apresentacao__foto{
     width: 200px;
-    border-radius: 20px;
-    border: var(--cor-de-fundo-menu) double 10px;
-    box-shadow: 0 6px 10px 0 black;
+    border-radius: 48px 0;
+    border: var(--cor-de-fundo-menu) solid 20px;
+    box-shadow: 5px 5px 10px 0 rgb(143, 136, 136);
+    
     
 }
+    
 .apresentacao__titulo{
     margin-top: 15%;
     text-align: center;
@@ -201,7 +203,7 @@ align-items: center;
     border-radius: 20px;
 }
 .projetos_repositorio_dec:hover{
-background-color: rgb(54, 190, 54);
+box-shadow: 0 0 0 4px white, 0 0 0 8px rgb(54, 190, 54) ;
 }
 .projetos__decodificador, .projetos__conteiner {
     max-width: 300px; /* Largura máxima da descrição */
