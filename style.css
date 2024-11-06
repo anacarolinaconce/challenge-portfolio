@@ -68,7 +68,7 @@ a {
     flex-direction: row-reverse;
     justify-content: space-around;
     padding: 5%;
-    gap: 80px;
+    gap: 30px;
 }
     
 .apresentacao__foto{
@@ -91,6 +91,17 @@ a {
 .apresentacao__subtitulo{
     font-family: var(--fonte-secundaria);
     text-align:center;
+}
+.redes__elemento{
+    display: inline-flex;
+    /* border: solid 1px; */
+    border-radius: 10px;
+    margin-top: 2px;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+.redes__elemento:hover{
+    background-color: var(--cor-de-fundo);
 }
                                                /* SOBRE MIM */
 .sobre-mim{
@@ -192,7 +203,7 @@ align-items: center;
 .projetos_img_decodificador,
 .projetos_img_portifolio {
     width: 50%;
-    box-shadow: 0 4px 15px 0 var(--cor-de-fundo-menu);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .projetos_repositorio_dec{
     cursor: pointer;
@@ -201,9 +212,10 @@ align-items: center;
     border: var(--cor-de-fundo-menu) 30px;
     font-family: var(--fonte-secundaria);
     border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 .projetos_repositorio_dec:hover{
-box-shadow: 0 0 0 4px white, 0 0 0 8px rgb(54, 190, 54) ;
+background-color: rgb(54, 190, 54) ;
 }
 .projetos__decodificador, .projetos__conteiner {
     max-width: 300px; /* Largura máxima da descrição */
