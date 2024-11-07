@@ -22,6 +22,7 @@ body {
     
 }
 
+
 ol, ul, li {
     list-style: none;
 }
@@ -58,6 +59,9 @@ a {
 .navegacao__lista {
     display: none;
     gap: 50px;
+}
+.navegacao__elemento:hover a{
+    color: white;
 }
 
 .navegacao__elemento a {
@@ -102,8 +106,9 @@ a {
     padding: 10px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
-.redes__elemento:hover{
-    background-color: var(--cor-de-fundo);
+.redes__elemento:active{
+    transform: scale(0.96);
+    /* background-color: var(--cor-de-fundo); */
 }
                                                /* SOBRE MIM */
 .sobre-mim{
